@@ -1,0 +1,81 @@
+{
+    "title": "The Suite of Charms - Renovated studio in the heart of the naturist village of Cap d'Agde",
+    "invitation_title" : "An invitation",
+    "invitation_description": "We offer you The Suite of Charms, a fully renovated 18 m² studio, ideally located in the heart of the naturist village of Cap d'Agde, in the sought-after Port Nature 2 residence (North walkways, No. 68).",
+    "location_title": "A privileged location",
+    "location_description": "Just a few steps from the beach, shops, and entertainment areas, this studio offers an ideal setting for a carefree vacation, respecting the naturist spirit.",
+    "contact_title":"Contact us",
+    "rooms": {
+        "title": "Accommodation description",
+        "main": {
+            "title": "Living space",
+            "amenities": [
+                "queen-size bed",
+                "flat-screen TV",
+                "Wi-Fi",
+                "reversible air conditioning"
+            ]
+        },
+        "kitchen": {
+            "title": "Equipped kitchen",
+            "amenities": [
+                "induction hob",
+                "refrigerator",
+                "dishwasher",
+                "microwave",
+                "Nespresso coffee machine",
+                "toaster",
+                "kettle",
+                "ice maker",
+                "complete tableware",
+                "kitchen utensils"
+            ]
+        },
+        "bathroom": {
+            "title": "Bathroom",
+            "amenities": [
+                "large walk-in shower",
+                "hairdryer",
+                "separate WC"
+            ]
+        },
+        "terrace": {
+            "title": "Terrace",
+            "amenities": [
+                "garden salon",
+                "sea view"
+            ]
+        },
+        "parking": {
+            "title": "Parking",
+            "amenities": [
+                "reserved space",
+                "secure access with remote control"
+            ]
+        }
+    },
+    "services": {
+        "title": "Included services",
+        "list": [
+            "Bed and bath linen provided",
+            "End-of-stay cleaning included",
+            "Wi-Fi"
+        ]
+    },
+    "rules": {
+        "title": "Booking conditions",
+        "stay": "Minimum stay: 2 nights",
+        "checkin": "Check-in: from 3:00 PM",
+        "checkout": "Check-out: until 11:00 AM",
+        "tariff": "Rate: €100 per night",
+        "cancellation": "Free cancellation up to 7 days before arrival",
+        "caution": "Deposit: €300"
+    },
+    "practical_info": {
+        "title": "Practical information",
+        "behavior": "Reserved for people respectful of the naturist lifestyle.",
+        "entry": "Access card to the naturist village not included: to be collected at the village reception upon arrival (fees at your expense).",
+        "transport": "Airport transfer available on request (paid service).",
+        "location": "The establishment is located 15 km from Béziers-Cap d'Agde airport."
+    }
+}

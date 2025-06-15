@@ -1,0 +1,505 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Lora:wght@400;700&display=swap');
+
+/* 243C62
+f7f7fe
+797874*/
+:root {
+
+    --dark-blue: #192943;
+    --white: #F8DE94;
+    --grey: #F8DE94;
+    --gold: #F8DE94;
+}
+
+/* Apply the fonts */
+body {
+    font-family: 'Poppins', sans-serif;
+    /* For a modern, clean look */
+    margin: 0;
+    background-color: var(--dark-blue);
+}
+
+h1 {
+    text-shadow: 1px 1px 5px var(--gold),
+        2px 2px 5px var(--gold),
+        -1px -1px 5px var(--gold);
+    color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lora', serif;
+    /* For a touch of elegance in headings */
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    border-radius: 4%;
+}
+
+/* Styles for the cookie pop-up */
+#cookie-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--dark-blue);
+    border: 1px solid var(--gold);
+    padding: 15px;
+    box-shadow: 0 4px 6px var(--gold);
+    display: flex;
+    align-content: center;
+    z-index: 1000;
+}
+
+#cookie-popup h2 {
+    margin: 0 0 10px;
+    color: var(--gold)
+}
+
+#cookie-popup p {
+    margin: 0;
+    font-size: 10px;
+    color: var(--grey);
+}
+
+#cookie-popup a {
+    margin: 10px 10px 10px 30px;
+    font-size: 10px;
+    color: var(--grey);
+}
+
+#cookie-popup button {
+    display: flex;
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    border-color: var(--dark-blue);
+    color: var(--dark-blue)
+}
+
+.cookie-description {
+    display: flex;
+    align-content: center;
+}
+
+#accept-cookies {
+    background-color: green
+}
+
+#decline-cookies {
+    background-color: red;
+}
+
+/* Styles for the nav-bar */
+.nav-links {
+    background-color: var(--gold);
+    color: var(--dark-blue);
+    height: 30px;
+    width: 100%;
+    /* Full width */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links a {
+    color: var(--dark-blue);
+    /* Light font color for links */
+    text-decoration: none;
+    /* Remove underline from links */
+    font-weight: 600;
+    /* Make links slightly bold */
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+.nav-links button {
+    color: var(--dark-blue);
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.nav-links a:hover {
+    font-size: 17px;
+    text-decoration: underline;
+    /* Add underline on hover */
+}
+
+/* Styles for the main content */
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: var(--gold);
+    background-color: var(--dark-blue);
+}
+
+.desc-contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.desc-contact-container>* {
+    margin: 5px;
+}
+
+.desc-contact-container .description {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+}
+
+#suite-bed-image {
+    display: flex;
+    max-width: 30%;
+    border: var(--gold) 1px solid;
+    box-shadow: 0 4px 4px var(--gold);
+}
+
+.desc-contact-container .description h2 {
+    text-align: left;
+}
+
+.desc-contact-container .description p {
+    color: var(--grey)
+}
+
+.desc-contact-container .description p i {
+    color: red
+}
+
+/* Contact form styles */
+.contact {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: var(--gold) 1px solid;
+    border-radius: 4%;
+    max-width: 30%;
+    min-width: 25%;
+}
+
+.contact-preference {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact-preference label {
+    font-size: 12px;
+    padding: 10px;
+    display: flex;
+}
+
+.contact-preference #contact-phone {
+    max-width: 10%;
+    display: flex;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+#contact-form form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#contact-form label {
+    font-weight: bold;
+}
+
+#contact-form input,
+#contact-form select,
+#contact-form textarea,
+#contact-form button {
+    display: flex;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+}
+
+#contact-form button {
+    background-color: var(--gold);
+    color: var(--dark-blue);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#contact-form button:hover {
+    background-color: var(--grey);
+}
+
+/*Style for the rooms */
+.rooms {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 15px;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--dark-blue);
+    color: var(--gold);
+}
+
+.rooms .rooms-text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: max-content;
+    color: var(--gold)
+}
+
+.rooms .room {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+}
+
+.rooms .room li {
+    margin-top: 10px;
+}
+
+.rooms img {
+    max-width: 100%;
+    border-radius: 5px;
+    border: var(--gold) 1px solid;
+    box-shadow: 0 4px 4px var(--gold);
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    margin: 10px;
+    object-fit: cover;
+    border: var(--gold) 1px solid;
+    box-shadow: 0 4px 4px var(--gold);
+}
+
+.image-grid img:hover {
+    transform: scale(1.30);
+}
+
+/*Styles for the footer */
+.footer-content {
+    display: flex;
+    background-color: var(--grey);
+    color: var(--dark-blue);
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.footer-content .add-infos {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.footer-content .add-infos .practical-info-list {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.practical-info-list ul {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    padding: 0;
+}
+
+* .icon {
+    font-size: 14px;
+    height: 16px;
+    width: 16px;
+    margin: 8px;
+    /* Add some space between list items */
+}
+
+/* Styles for the map */
+#map {
+    display: flex;
+    background-color: var(--dark-blue);
+    width: 50%;
+    height: 300px;
+    margin-right: 10px;
+}
+
+
+/*Secre toggle*/
+.image-secret-container {
+    position: relative;
+    display: inline-block;
+}
+
+.suite-secret-image {
+    width: 100%;
+    height: auto;
+
+    border-radius: 5px;
+    border: var(--gold) 1px solid;
+    box-shadow: 0 4px 4px var(--gold);
+}
+
+.secret-overlay {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark-blue);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.secret-overlay i {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.secret-overlay span {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.secret-overlay:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Darker background on hover */
+}
+
+@media screen and (max-width: 1024px) {
+
+    h3 {
+        font-size: 1em;
+    }
+
+    .main-container {
+        padding: 5px;
+    }
+
+    .desc-contact-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px
+    }
+
+    .desc-contact-container .description {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    #suite-bed-image {
+        max-width: 100%;
+    }
+
+    .desc-contact-container .contact {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content .add-infos {
+        width: 100%;
+        text-align: center;
+    }
+
+    #map {
+        width: 100%;
+    }
+
+    /* Photos du studio */
+
+    .rooms {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .rooms .room ul {
+        padding-inline-start: 0px;
+    }
+
+    .rooms .room li {
+        font-size: 12px;
+    }
+
+    .rooms-text {
+        width: 100%;
+    }
+
+    .image-grid {
+        width: 90%;
+        max-width: 90%;
+        grid-template-columns: 1fr;
+    }
+    
+    .image-grid img:hover {
+        transform: scale(1.10);
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .nav-links a:hover {
+        font-size: 13px;
+    }
+
+
+}

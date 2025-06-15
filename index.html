@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Suite des charmes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="resources/icons/mouth.svg" type="image/svg">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 id="main-title"></h1>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#studio">Studio</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/share/1Ba3QWYR4x/"
+                id="facebook-link"><i class="fab fa-facebook-f"></i></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/lavilladescharmes"
+                id="instagram-link"><i class="fab fa-instagram"></i></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://pin.it/6f8rwdymG" id="pinterest-link"><i
+                    class="fab fa-pinterest"></i></a>
+
+            <div class="toggle-lang">
+                <button id="langToggle">FR</button>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <div class="main-container">
+            <!-- Descripton -->
+            <div class="desc-contact-container">
+                <!-- Home page -->
+                <div class="description">
+                    <h2 id="invitation-title"></h2>
+                    <p id="invitation-description"></p>
+                    <h2 id="description-title"></h2>
+                    <p id="description-text"></p>
+                    <p>
+                        <span id="behavior">Behavior</span><i class="fas fa-heart icon"></i>
+                    </p>
+                </div>
+                <!-- Home page image -->
+                <img src="resources/images/suite_bath.jpg" alt="Suite des charmes" id="suite-bed-image">
+                <!-- Contact form -->
+                <div class="contact">
+                    <h2 id="contact-title"></h2>
+                    <div id="contact-form">
+                        <form action="#" method="post">
+                            <label for="name">Nom *</label>
+                            <input type="text" id="name" name="name" required>
+
+                            <label for="email">Adresse e-mail *</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="phone">Téléphone</label>
+                            <input type="text" id="phone" name="phone">
+
+                            <label for="subject">Objet</label>
+                            <select id="subject" name="subject">
+                                <option value="reservation">Réservation</option>
+                                <option value="availability">Annulation</option>
+                                <option value="info">Information</option>
+                            </select>
+
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+
+                            <div class="contact-preference">
+                                <label for="contact-phone">Je préfère être contacté par téléphone</label>
+                                <input type="checkbox" id="contact-phone" name="contact_preference" value="phone">
+                            </div>
+
+                            <button type="submit">Envoyer</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Rooms & Amenities-->
+                <div class="rooms" style="display: none;">
+                    <div class="rooms-text">
+                        <div class="room">
+                            <h3 id="main-room-title"></h3>
+                            <ul id="main-room-amenities"></ul>
+                            <h3 id="bathroom-title"></h3>
+                            <ul id="bathroom-amenities"></ul>
+                        </div>
+                        <div class="room">
+                            <h3 id="kitchen-title"></h3>
+                            <ul id="kitchen-amenities"></ul>
+                        </div>
+                        <div class="room">
+                            <h3 id="terrace-title"></h3>
+                            <ul id="terrace-amenities"></ul>
+                        </div>
+                        <div class="room">
+                            <h3 id="parking-title"></h3>
+                            <ul id="parking-amenities"></ul>
+                        </div>
+                    </div>
+                    <div class="image-grid">
+                        <div class="image-secret-container">
+                            <img class="suite-secret-image" src="resources/images/suite_main.jpg" alt="Suite Main"
+                                id="suite-secret-image-off">
+                            <img class="suite-secret-image" src="resources/images/suite_s.jpg" style="display : none;"
+                                alt="Suite S" id="suite-secret-image-on">
+                            <div class="secret-overlay">
+                                <i class="fas fa-toggle-off" id="secret-icon"></i>
+                                <span>Secret Mode</span>
+                            </div>
+                        </div>
+                        <img src="resources/images/suite_x.jpg" alt="Suite X">
+                        <img src="resources/images/suite_bath_front.jpg" alt="Suite Bath Front">
+                        <img src="resources/images/suite_bedroom.jpg" alt="Suite Bath">
+                        <img src="resources/images/suite_ext.jpg" alt="Suite Exterior">
+                        <img src="resources/images/suite_kitchen.jpg" alt="Suite Kitchen">
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <!-- Infos & Map -->
+        <div class="footer-content">
+            <div class="add-infos">
+                <h2 id="practical-info-title"></h2>
+                <div class="practical-info-list">
+                    <ul>
+                        <li><i class="fas fa-id-badge icon"></i><span id="entry">Entry</span></li>
+                        <li><i class="fas fa-bus icon"></i><span id="transport">Transport</span></li>
+                        <li><i class="fas fa-map-marker-alt icon"></i><span id="location">Location</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="map"></div>
+        </div>
+
+        <!-- Cookie pop-up -->
+        <div id="cookie-popup">
+            <h2>Do you want cookies? 🍪</h2>
+            <p>We use cookies to enhance your experience.</p>
+            <p> By clicking "Yes", you agree to our use of cookies.</p>
+            <div class="cookie-description">
+                <button class="button" id="accept-cookies">Yes</button>
+                <button class="button" id="decline-cookies">No</button>
+                <a
+                    href="https://europa.eu/youreurope/business/dealing-with-customers/data-protection/online-privacy/index_fr.htm">learn
+                    more about cookies</a>
+            </div>
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

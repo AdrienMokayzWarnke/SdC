@@ -1,0 +1,81 @@
+{
+    "title" : "La Suite des Charmes - Studio rénové au cœur du village naturiste du Cap d'Agde",
+    "invitation_title" : "Les coursives",
+    "invitation_description" : "Nous vous proposons La Suite des Charmes, un studio entièrement rénové de 18 m², idéalement situé au cœur du village naturiste du Cap d'Agde, dans la résidence prisée Port Nature 2 (coursives Nord, n°68).",
+    "location_title":"Un emplacement privilégié",
+    "location_description":"À seulement quelques pas de la plage, des commerces et des zones d'animation, ce studio offre un cadre idéal pour des vacances en toute liberté, dans le respect de l'esprit naturiste.",
+    "contact_title":"Contactez-nous",
+    "rooms": {
+        "title": "Description du logement",
+        "main":{
+            "title": "Espace de vie",
+            "amenities": [
+                "lit queen-size",
+                "télévision à écran plat",
+                "Wi-Fi",
+                "climatisation réversible"
+            ]
+        },
+        "kitchen":{
+            "title": "Cuisine équipée",
+            "amenities": [
+                "plaque à induction",
+                "réfrigérateur",
+                "lave-vaisselle",
+                "micro-ondes",
+                "cafetière Nespresso",
+                "grille-pain",
+                "bouilloire",
+                "machine à glaçons",
+                "vaiselle complète",
+                "ustensiles de cuisine"
+            ]
+        },
+        "bathroom":{
+            "title": "Salle d'eau",
+            "amenities": [
+                "grande douche à l'italienne",
+                "sèche-cheveux",
+                "WC séparés"
+            ]
+        },
+        "terrace":{
+            "title": "Terrasse",
+            "amenities": [
+                "salon de jardin",
+                "vue sur la mer"
+            ]
+        },
+        "parking":{
+            "title": "Parking",
+            "amenities": [
+                "place réservée",
+                "accès sécurisé par télécommande"
+            ]
+        }
+    },
+    "services": {
+        "title": "Services inclus",
+        "list": [
+            "Linge de lit et de toilette fourni",
+            "Ménage de fin de séjour inclus",
+            "Wi-fi"
+        ]
+    },
+    "rules": {
+        "title":"Conditions de réservation",
+        "stay":"Séjour minimum : 2 nuits",
+        "checkin":"Arrivée : à partir de 15h00",
+        "checkout":"Départ : jusqu'à 11h00",
+        "tariff":"Tarif : 100 € par nuit",
+        "cancellation":"Annulation gratuite jusqu'à 7 jours avant l'arrivée",
+        "caution":"Caution : 300 €"
+    },
+    "practical_info": {
+        "title": "Informations pratiques",
+        "behavior": "Réservé aux personnes respectueuses du mode de vie naturiste.",
+        "entry":"Carte d'accès au village naturiste non incluse : à retirer à l'accueil du village lors de votre arrivée (frais à votre charge).",
+        "transport":"Transfert aéroport disponible sur demande (service payant).",
+        "location":"L'établissement se trouve à 15 km de l'aéroport Béziers  -Cap d'Agde."
+    }
+}
