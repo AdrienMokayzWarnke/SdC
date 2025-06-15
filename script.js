@@ -60,17 +60,6 @@ function addEventListenerInit(){
         document.querySelector('.rooms').style.display = 'flex';
     });
 
-    document.querySelector('a[href="#home"]').addEventListener('click', (event) => {
-        event.preventDefault(); // Prevent default anchor behavior
-    
-        // show the description and suite-bed-image
-        document.querySelector('.description').style.display = 'flex';
-        document.getElementById('suite-bed-image').style.display = 'flex';
-        document.querySelector('.contact').style.display = 'flex';
-        // Show the rooms div
-        document.querySelector('.rooms').style.display = 'none';
-    });
-
     document.querySelector('a[href="#contact"]').addEventListener('click', (event) => {
         event.preventDefault(); // Prevent default anchor behavior
     
@@ -131,7 +120,7 @@ function initText(lang) {
     fetch(resourceSource)
         .then(response => response.json())
         .then(data => {
-            mainTitle.textContent = data.title;            
+            mainTitle.innerHTML = data.title;            
             invitationDescription.textContent = data.invitation_description;
             invitationTitle.textContent = data.invitation_title;
             descriptionTitle.textContent = data.location_title;

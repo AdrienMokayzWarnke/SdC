@@ -1,5 +1,5 @@
 {
-    "title": "The Suite of Charms - Renovated studio in the heart of the naturist village of Cap d'Agde",
+    "title": "The Suite of Charms <span style=\"display:block;font-size:18px;width:100%\">Studio in the heart of the naturist village of Cap d'Agde</span>",
     "invitation_title" : "An invitation",
     "invitation_description": "We offer you The Suite of Charms, a fully renovated 18 m² studio, ideally located in the heart of the naturist village of Cap d'Agde, in the sought-after Port Nature 2 residence (North walkways, No. 68).",
     "location_title": "A privileged location",
@@ -49,8 +49,8 @@
         "parking": {
             "title": "Parking",
             "amenities": [
-                "reserved space",
-                "secure access with remote control"
+                "free reserved space",
+                "secure access with automatic gate"
             ]
         }
     },

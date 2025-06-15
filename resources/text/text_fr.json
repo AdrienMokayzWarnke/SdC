@@ -1,5 +1,5 @@
 {
-    "title" : "La Suite des Charmes - Studio rénové au cœur du village naturiste du Cap d'Agde",
+    "title" : "La Suite des Charmes <span style=\"display:block;font-size:18px;width:100%\">Studio à louer au village naturiste Cap d'Agde</span>",
     "invitation_title" : "Les coursives",
     "invitation_description" : "Nous vous proposons La Suite des Charmes, un studio entièrement rénové de 18 m², idéalement situé au cœur du village naturiste du Cap d'Agde, dans la résidence prisée Port Nature 2 (coursives Nord, n°68).",
     "location_title":"Un emplacement privilégié",
@@ -43,14 +43,14 @@
             "title": "Terrasse",
             "amenities": [
                 "salon de jardin",
-                "vue sur la mer"
+                "vue mer"
             ]
         },
         "parking":{
             "title": "Parking",
             "amenities": [
-                "place réservée",
-                "accès sécurisé par télécommande"
+                "place réservée gratuite",
+                "accès sécurisé par portail motorisé"
             ]
         }
     },

@@ -104,13 +104,26 @@ img {
 .nav-links {
     background-color: var(--gold);
     color: var(--dark-blue);
-    height: 30px;
+    height: auto;
     width: 100%;
     /* Full width */
     padding-top: 10px;
     padding-bottom: 10px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: stretch;
+}
+
+.nav-links div {
+    font-size:14px;
+}
+
+.nav-links .contact-info-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-links .contact-info-container i {
+    margin: 0 5px;
 }
 
 .nav-links a {
