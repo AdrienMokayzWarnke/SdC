@@ -93,11 +93,11 @@ img {
 }
 
 #accept-cookies {
-    background-color: green
+    background-color: rgb(186, 255, 186)
 }
 
 #decline-cookies {
-    background-color: red;
+    background-color: rgb(255, 150, 150);
 }
 
 /* Styles for the nav-bar */
