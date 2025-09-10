@@ -133,15 +133,15 @@ function initText(lang) {
             practicalInfoTitle.textContent = data.practical_info.title;
 
             mainRoomTitle.textContent = data.rooms.main.title;
-            mainRoomAmenities.innerHTML = data.rooms.main.amenities.map(amenity => `<li> - ${amenity}</li>`).join('');
+            mainRoomAmenities.innerHTML = data.rooms.main.amenities.map(amenity => `<li>${amenity}</li>`).join('');
             kitchenTitle.textContent = data.rooms.kitchen.title;
-            kitchenAmenities.innerHTML = data.rooms.kitchen.amenities.map(amenity => `<li> - ${amenity}</li>`).join('');
+            kitchenAmenities.innerHTML = data.rooms.kitchen.amenities.map(amenity => `<li>${amenity}</li>`).join('');
             bathroomTitle.textContent = data.rooms.bathroom.title;
-            bathroomAmenities.innerHTML = data.rooms.bathroom.amenities.map(amenity => `<li> - ${amenity}</li>`).join('');
+            bathroomAmenities.innerHTML = data.rooms.bathroom.amenities.map(amenity => `<li>${amenity}</li>`).join('');
             terraceTitle.textContent = data.rooms.terrace.title;
-            terraceAmenities.innerHTML = data.rooms.terrace.amenities.map(amenity => `<li> - ${amenity}</li>`).join('');
+            terraceAmenities.innerHTML = data.rooms.terrace.amenities.map(amenity => `<li>${amenity}</li>`).join('');
             parkingTitle.textContent = data.rooms.parking.title;
-            parkingAmenities.innerHTML = data.rooms.parking.amenities.map(amenity => `<li> - ${amenity}</li>`).join('');
+            parkingAmenities.innerHTML = data.rooms.parking.amenities.map(amenity => `<li>${amenity}</li>`).join('');
         })
         .catch(error => console.error('Error loading text:', error));
 }
