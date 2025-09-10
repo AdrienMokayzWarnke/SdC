@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Crawl-delay: 1
+
+User-agent: Yandex
+Disallow: /
+
+Sitemap: https://la-suite-des-charmes.fr/resources/site-map.xml
