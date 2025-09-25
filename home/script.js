@@ -18,6 +18,8 @@ const transportText = document.getElementById('transport');
 const locationText = document.getElementById('location');
 
 const secretIcon = document.getElementById('secret-icon');
+const contactIcon = document.getElementById('contact-icon');
+const studioIcon = document.getElementById('studio-icon');
 const secretImageOff = document.getElementById('suite-secret-image-off');
 const secretImageOn = document.getElementById('suite-secret-image-on');
 
@@ -58,6 +60,10 @@ function addEventListenerInit(){
     
         // Show the rooms div
         document.querySelector('.rooms').style.display = 'flex';
+
+        //update the icons
+        contactIcon.classList.remove('fa-arrow-pointer');
+        studioIcon.classList.add('fa-arrow-pointer');
     });
 
     document.querySelector('a[href="#contact"]').addEventListener('click', (event) => {
@@ -67,8 +73,13 @@ function addEventListenerInit(){
         document.querySelector('.description').style.display = 'flex';
         document.getElementById('suite-bed-image').style.display = 'flex';
         document.querySelector('.contact').style.display = 'flex';
+
         // Show the rooms div
         document.querySelector('.rooms').style.display = 'none';
+
+        //update the icons
+        contactIcon.classList.add('fa-arrow-pointer');
+        studioIcon.classList.remove('fa-arrow-pointer');
     });
 
     secretIcon.addEventListener('click', () => {

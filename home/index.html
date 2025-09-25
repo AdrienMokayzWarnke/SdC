@@ -8,7 +8,7 @@
     <meta name="google-site-verification" content="IVqdM9PMclxIVjNMCwtFzaKaaqgnXmfftpfqN3DS2Sg" />
     <title>Suite des charmes</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon"  type="image/png" href="favicon.png">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="resources/site-map.xml">
@@ -24,15 +24,7 @@
             </span>
         </h1>
         <div class="nav-links">
-            <div class="contact-info-container">
-                <div id="contact-number"><i class="fa-solid fa-envelope"></i>lasuitedescharmes@gmail.com</div>
-                <div id="contact-number"><i class="fa-solid fa-phone"></i>0647541005 / 0677901300</div>
-            </div>
-            <div class="contact-info-container">
-                <a href="#contact">Contact</a>
-                <a href="#studio">Studio</a>
-            </div>
-            <div class="contact-info-container">
+            <div class="contact-info-container-links">
                 <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/share/1Ba3QWYR4x/"
                     id="facebook-link"><i class="fab fa-facebook-f"></i></a>
                 <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/lavilladescharmes"
@@ -40,9 +32,21 @@
                 <a target="_blank" rel="noopener noreferrer" href="https://pin.it/6f8rwdymG" id="pinterest-link"><i
                         class="fab fa-pinterest"></i></a>
             </div>
-            <div class="toggle-lang">
-                <button id="langToggle">FR</button>
+            <div class="contact-info-container">
+                <div id="contact-mail"><i class="fa-solid fa-envelope"></i>lasuitedescharmes@gmail.com</div>
+                <div id="contact-number"><i class="fa-solid fa-phone"></i>06 47 54 10 05 / 06 77 90 13 00</div>
             </div>
+            <div class="contact-info-container">
+                <div>
+                    <a href="#contact">Contact</a><i id="contact-icon" class="fa-solid fa-arrow-pointer"></i>
+                </div>
+                <div>
+                    <a href="#studio">Studio</a><i id="studio-icon" class="fa-solid"></i>
+                </div>
+            </div>
+        </div>
+        <div class="toggle-lang">
+            <button id="langToggle">FR</button>
         </div>
     </header>
     <main>
@@ -50,13 +54,16 @@
             <!-- Descripton -->
             <div class="desc-contact-container">
                 <!-- Home page image -->
-                <img src="resources/images/suite_bath.jpg" alt="Suite des charmes" id="suite-bed-image">
+                <img src="resources/images/suite_bath.jpg" 
+                alt="Suite des charmes" 
+                id="suite-bed-image"
+                fetchPriority="high">
                 <!-- Home page -->
                 <div class="description">
-                    <h2 id="invitation-title"></h2>
-                    <p id="invitation-description"></p>
-                    <h2 id="description-title"></h2>
-                    <p id="description-text"></p>
+                    <h2 id="invitation-title">Les coursives</h2>
+                    <p id="invitation-description">Nous vous proposons La Suite des Charmes, un studio entièrement rénové de 18 m², idéalement situé au cœur du village naturiste du Cap d'Agde, dans la résidence prisée Port Nature 2 (coursives Nord, n°68).</p>
+                    <h2 id="description-title">Un emplacement privilégié</h2>
+                    <p id="description-text">À seulement quelques pas de la plage, des commerces et des zones d'animation, ce studio offre un cadre idéal pour des vacances en toute liberté, dans le respect de l'esprit naturiste.</p>
                     <p>
                         <span id="behavior">Behavior</span><i class="fas fa-heart icon"></i>
                     </p>
