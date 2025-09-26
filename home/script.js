@@ -53,33 +53,34 @@ function addEventListenerInit(){
     document.querySelector('a[href="#studio"]').addEventListener('click', (event) => {
         event.preventDefault(); // Prevent default anchor behavior
     
-        // Hide the description and suite-bed-image
-        document.querySelector('.description').style.display = 'none';
-        document.getElementById('suite-bed-image').style.display = 'none';
-        document.querySelector('.contact').style.display = 'none';
+        // // Hide the description and suite-bed-image
+        // document.querySelector('.description').style.display = 'none';
+        // document.getElementById('suite-bed-image').style.display = 'none';
+        // document.querySelector('.contact').style.display = 'none';
     
-        // Show the rooms div
-        document.querySelector('.rooms').style.display = 'flex';
+        // // Show the rooms div
+        // document.querySelector('.rooms').style.display = 'flex';
+        mainRoomTitle.scrollIntoView();
 
         //update the icons
-        contactIcon.classList.remove('fa-arrow-pointer');
-        studioIcon.classList.add('fa-arrow-pointer');
+        // contactIcon.classList.remove('fa-arrow-pointer');
+        // studioIcon.classList.add('fa-arrow-pointer');
     });
 
     document.querySelector('a[href="#contact"]').addEventListener('click', (event) => {
         event.preventDefault(); // Prevent default anchor behavior
     
-        // show the description and suite-bed-image
-        document.querySelector('.description').style.display = 'flex';
-        document.getElementById('suite-bed-image').style.display = 'flex';
-        document.querySelector('.contact').style.display = 'flex';
+        // // Show the description and suite-bed-image
+        // document.querySelector('.description').style.display = 'flex';
+        // document.getElementById('suite-bed-image').style.display = 'flex';
+        // document.querySelector('.contact').style.display = 'flex';
 
-        // Show the rooms div
-        document.querySelector('.rooms').style.display = 'none';
-
+        // // Show the rooms div
+        // document.querySelector('.rooms').style.display = 'none';
+        mainTitle.scrollIntoView();
         //update the icons
-        contactIcon.classList.add('fa-arrow-pointer');
-        studioIcon.classList.remove('fa-arrow-pointer');
+        // contactIcon.classList.add('fa-arrow-pointer');
+        // studioIcon.classList.remove('fa-arrow-pointer');
     });
 
     secretIcon.addEventListener('click', () => {

@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="google-site-verification" content="IVqdM9PMclxIVjNMCwtFzaKaaqgnXmfftpfqN3DS2Sg" />
-    <meta name="description"
-        content="
+    <meta name="description" content="
         La Suite des Charmes, a studio for rent in the naturist village of Cap d'Agde.
         The studio is located in the Port Nature 2 residence, close to the beach, shops and entertainment areas.
         Its 18 m² have been completely renovated and are ideal for a holiday in complete freedom, in the spirit of naturism.
@@ -19,7 +18,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon"  type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="resources/site-map.xml">
     <link rel="search" type="text/plain" title="Robots" href="robots.txt">
 </head>
@@ -27,7 +26,7 @@
 <body>
     <header>
         <h1 id="main-title">
-            La Suite des Charmes 
+            La Suite des Charmes
             <span style="display:block;font-size:18px;width:100%">
                 Studio à louer au village naturiste Cap d'Agde
             </span>
@@ -47,10 +46,12 @@
             </div>
             <div class="contact-info-container">
                 <div>
-                    <a href="#contact">Contact</a><i id="contact-icon" class="fa-solid fa-arrow-pointer"></i>
+                    <a href="#contact">Contact</a>
+                    <!-- <i id="contact-icon" class="fa-solid fa-arrow-pointer"></i> -->
                 </div>
                 <div>
-                    <a href="#studio">Studio</a><i id="studio-icon" class="fa-solid"></i>
+                    <a href="#studio">Studio</a>
+                    <!-- <i id="studio-icon" class="fa-solid fa-arrow-pointer"></i> -->
                 </div>
             </div>
         </div>
@@ -63,16 +64,18 @@
             <!-- Descripton -->
             <div class="desc-contact-container">
                 <!-- Home page image -->
-                <img src="resources/images/suite_bath.jpg" 
-                alt="Suite des charmes" 
-                id="suite-bed-image"
-                fetchPriority="high">
+                <img src="resources/images/suite_bath.jpg" alt="Suite des charmes" id="suite-bed-image"
+                    fetchPriority="high">
                 <!-- Home page -->
                 <div class="description">
                     <h2 id="invitation-title">Les coursives</h2>
-                    <p id="invitation-description">Nous vous proposons La Suite des Charmes, un studio entièrement rénové de 18 m², idéalement situé au cœur du village naturiste du Cap d'Agde, dans la résidence prisée Port Nature 2 (coursives Nord, n°68).</p>
+                    <p id="invitation-description">Nous vous proposons La Suite des Charmes, un studio entièrement
+                        rénové de 18 m², idéalement situé au cœur du village naturiste du Cap d'Agde, dans la résidence
+                        prisée Port Nature 2 (coursives Nord, n°68).</p>
                     <h2 id="description-title">Un emplacement privilégié</h2>
-                    <p id="description-text">À seulement quelques pas de la plage, des commerces et des zones d'animation, ce studio offre un cadre idéal pour des vacances en toute liberté, dans le respect de l'esprit naturiste.</p>
+                    <p id="description-text">À seulement quelques pas de la plage, des commerces et des zones
+                        d'animation, ce studio offre un cadre idéal pour des vacances en toute liberté, dans le respect
+                        de l'esprit naturiste.</p>
                     <p>
                         <span id="behavior">Behavior</span><i class="fas fa-heart icon"></i>
                     </p>
@@ -110,47 +113,48 @@
                         </form>
                     </div>
                 </div>
-                <!-- Rooms & Amenities-->
-                <div class="rooms" style="display: none;">
-                    <div class="rooms-text">
-                        <div class="room">
-                            <h3 id="main-room-title"></h3>
-                            <ul id="main-room-amenities"></ul>
-                            <h3 id="bathroom-title"></h3>
-                            <ul id="bathroom-amenities"></ul>
-                        </div>
-                        <div class="room">
-                            <h3 id="kitchen-title"></h3>
-                            <ul id="kitchen-amenities"></ul>
-                        </div>
-                        <div class="room">
-                            <h3 id="terrace-title"></h3>
-                            <ul id="terrace-amenities"></ul>
-                        </div>
-                        <div class="room">
-                            <h3 id="parking-title"></h3>
-                            <ul id="parking-amenities"></ul>
-                        </div>
+            </div>
+            <!-- Rooms & Amenities-->
+            <div class="rooms">
+                <div class="rooms-text">
+                    <div class="room">
+                        <h3 id="main-room-title"></h3>
+                        <ul id="main-room-amenities"></ul>
+                        <h3 id="bathroom-title"></h3>
+                        <ul id="bathroom-amenities"></ul>
                     </div>
-                    <div class="image-grid">
-                        <div class="image-secret-container">
-                            <img class="suite-secret-image" src="resources/images/suite_main.jpg" alt="Suite Main"
-                                id="suite-secret-image-off">
-                            <img class="suite-secret-image" src="resources/images/suite_s.jpg" style="display : none;"
-                                alt="Suite S" id="suite-secret-image-on">
-                            <div class="secret-overlay">
-                                <i class="fas fa-toggle-off" id="secret-icon"></i>
-                                <span>Secret Mode</span>
-                            </div>
-                        </div>
-                        <img src="resources/images/suite_x.jpg" alt="Suite X">
-                        <img src="resources/images/suite_bath_front.jpg" alt="Suite Bath Front">
-                        <img src="resources/images/suite_bedroom.jpg" alt="Suite Bath">
-                        <img src="resources/images/suite_ext.jpg" alt="Suite Exterior">
-                        <img src="resources/images/suite_kitchen.jpg" alt="Suite Kitchen">
+                    <div class="room">
+                        <h3 id="kitchen-title"></h3>
+                        <ul id="kitchen-amenities"></ul>
+                    </div>
+                    <div class="room">
+                        <h3 id="terrace-title"></h3>
+                        <ul id="terrace-amenities"></ul>
+                    </div>
+                    <div class="room">
+                        <h3 id="parking-title"></h3>
+                        <ul id="parking-amenities"></ul>
                     </div>
                 </div>
+                <div class="image-grid">
+                    <div class="image-secret-container">
+                        <img class="suite-secret-image" src="resources/images/suite_main.jpg" alt="Suite Main"
+                            id="suite-secret-image-off">
+                        <img class="suite-secret-image" src="resources/images/suite_s.jpg" style="display : none;"
+                            alt="Suite S" id="suite-secret-image-on">
+                        <div class="secret-overlay">
+                            <i class="fas fa-toggle-off" id="secret-icon"></i>
+                            <span>Secret Mode</span>
+                        </div>
+                    </div>
+                    <img src="resources/images/suite_x.jpg" alt="Suite X">
+                    <img src="resources/images/suite_bath_front.jpg" alt="Suite Bath Front">
+                    <img src="resources/images/suite_bedroom.jpg" alt="Suite Bath">
+                    <img src="resources/images/suite_ext.jpg" alt="Suite Exterior">
+                    <img src="resources/images/suite_kitchen.jpg" alt="Suite Kitchen">
+                </div>
             </div>
+        </div>
     </main>
     <footer>
         <!-- Infos & Map -->
