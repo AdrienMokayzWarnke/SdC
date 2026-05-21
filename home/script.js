@@ -5,9 +5,9 @@
 //      {{from_name}}, {{from_email}}, {{phone}}, {{subject}}, {{message}}, {{contact_preference}}
 //    Set "To Email" in the template to: lasuitedescharmes@gmail.com
 // 4. Replace the three values below with your actual IDs from the EmailJS dashboard
-const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';
-const EMAILJS_SERVICE_ID  = 'YOUR_SERVICE_ID';
-const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
+const EMAILJS_PUBLIC_KEY  = 'yceXXBO_Tfh2jurYB';
+const EMAILJS_SERVICE_ID  = 'service_r39tk7p';
+const EMAILJS_TEMPLATE_ID = 'template_k9edgol';
 // ──────────────────────────────────────────────────────────────────────────
 
 const cookiePopup        = document.getElementById('cookie-popup');
@@ -67,7 +67,7 @@ const heroCta     = document.getElementById('hero-cta');
 
 let currentLang = 'fr';
 
-emailjs.init(EMAILJS_PUBLIC_KEY);
+emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
 init();
 
 function init() {
