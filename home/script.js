@@ -115,7 +115,14 @@ function handleFormSubmit(e) {
     submitButton.disabled = true;
     submitButton.textContent = currentLang === 'fr' ? 'Envoi…' : 'Sending…';
 
-    emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, contactForm)
+    emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+            from_name:          document.getElementById('name').value,
+            from_email:         document.getElementById('email').value,
+            phone:              document.getElementById('phone').value,
+            subject:            document.getElementById('subject').value,
+            message:            document.getElementById('message').value,
+            contact_preference: document.getElementById('contact-phone').checked ? 'Téléphone' : 'Email'
+        })
         .then(() => {
             formStatus.textContent = currentLang === 'fr'
                 ? 'Message envoyé ! Nous vous répondrons sous peu.'
