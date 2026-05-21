@@ -15,6 +15,8 @@
         For more information or to make a reservation, please contact us by email at lasuitedescharmes@gmail.com.
         Author A. WARNKE.">
     <title>Suite des charmes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
@@ -45,29 +47,36 @@
                 <div id="contact-number"><i class="fa-solid fa-phone"></i>06 47 54 10 05 / 06 77 90 13 00</div>
             </div>
             <div class="contact-info-container">
-                <div>
-                    <a href="#contact">Contact</a>
-                    <!-- <i id="contact-icon" class="fa-solid fa-arrow-pointer"></i> -->
-                </div>
-                <div>
-                    <a href="#studio">Studio</a>
-                    <!-- <i id="studio-icon" class="fa-solid fa-arrow-pointer"></i> -->
-                </div>
+                <div><a href="#contact" id="nav-contact">Contact</a></div>
+                <div><a href="#studio" id="nav-studio">Studio</a></div>
             </div>
         </div>
         <div class="toggle-lang">
-            <button id="langToggle">FR</button>
+            <span id="lang-label">Langue</span>
+            <select id="langToggle">
+                <option value="fr">FR</option>
+                <option value="en">EN</option>
+            </select>
         </div>
     </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <img src="resources/images/suite_bath.jpg" alt="Suite des charmes" fetchpriority="high">
+        <div class="hero-overlay">
+            <p class="hero-tagline" id="hero-tagline">Studio entièrement rénové · Vue mer · Port Nature 2</p>
+            <a href="#contact" class="hero-cta" id="hero-cta">Nous contacter</a>
+        </div>
+    </section>
+
     <main>
         <div class="main-container">
-            <!-- Descripton -->
+
+            <div class="section-divider"></div>
+
+            <!-- Description + Contact -->
             <div class="desc-contact-container">
-                <!-- Home page image -->
-                <img src="resources/images/suite_bath.jpg" alt="Suite des charmes" id="suite-bed-image"
-                    fetchPriority="high">
-                <!-- Home page -->
-                <div class="description">
+                <div class="description reveal">
                     <h2 id="invitation-title">Les coursives</h2>
                     <p id="invitation-description">Nous vous proposons La Suite des Charmes, un studio entièrement
                         rénové de 18 m², idéalement situé au cœur du village naturiste du Cap d'Agde, dans la résidence
@@ -80,58 +89,80 @@
                         <span id="behavior">Behavior</span><i class="fas fa-heart icon"></i>
                     </p>
                 </div>
+
                 <!-- Contact form -->
-                <div class="contact">
+                <div class="contact reveal" id="contact">
                     <h2 id="contact-title"></h2>
                     <div id="contact-form">
-                        <form action="#" method="post">
-                            <label for="name">Nom *</label>
-                            <input type="text" id="name" name="name" required>
+                        <form>
+                            <label for="name" id="label-name">Nom *</label>
+                            <input type="text" id="name" name="from_name" autocomplete="name" required>
 
-                            <label for="email">Adresse e-mail *</label>
-                            <input type="email" id="email" name="email" required>
+                            <label for="email" id="label-email">Adresse e-mail *</label>
+                            <input type="email" id="email" name="from_email" autocomplete="email" required>
 
-                            <label for="phone">Téléphone</label>
-                            <input type="text" id="phone" name="phone">
+                            <label for="phone" id="label-phone">Téléphone</label>
+                            <input type="text" id="phone" name="phone" autocomplete="tel">
 
-                            <label for="subject">Objet</label>
+                            <label for="subject" id="label-subject">Objet</label>
                             <select id="subject" name="subject">
-                                <option value="reservation">Réservation</option>
-                                <option value="availability">Annulation</option>
-                                <option value="info">Information</option>
+                                <option value="Réservation" id="opt-reservation">Réservation</option>
+                                <option value="Annulation" id="opt-cancellation">Annulation</option>
+                                <option value="Information" id="opt-info">Information</option>
                             </select>
 
-                            <label for="message">Message</label>
+                            <label for="message" id="label-message">Message</label>
                             <textarea id="message" name="message" rows="4"></textarea>
 
                             <div class="contact-preference">
-                                <label for="contact-phone">Je préfère être contacté par téléphone</label>
                                 <input type="checkbox" id="contact-phone" name="contact_preference" value="phone">
+                                <label for="contact-phone" id="label-phone-pref">Je préfère être contacté par téléphone</label>
                             </div>
 
                             <button type="submit">Envoyer</button>
                         </form>
+                        <div class="form-status" id="form-status"></div>
                     </div>
                 </div>
             </div>
-            <!-- Rooms & Amenities-->
-            <div class="rooms">
+
+            <div class="section-divider"></div>
+
+            <!-- Pricing -->
+            <section class="pricing-section reveal">
+                <div class="pricing-card">
+                    <div class="pricing-price">
+                        <span class="price-amount" id="price-amount">100 €</span>
+                        <span class="price-unit" id="price-unit">/ nuit</span>
+                    </div>
+                    <ul class="pricing-details" id="pricing-details"></ul>
+                </div>
+                <div class="services-card">
+                    <h3 id="services-title"></h3>
+                    <ul id="services-list"></ul>
+                </div>
+            </section>
+
+            <div class="section-divider"></div>
+
+            <!-- Rooms & Amenities -->
+            <div class="rooms" id="studio">
                 <div class="rooms-text">
-                    <div class="room">
+                    <div class="room reveal">
                         <h3 id="main-room-title"></h3>
                         <ul id="main-room-amenities"></ul>
                         <h3 id="bathroom-title"></h3>
                         <ul id="bathroom-amenities"></ul>
                     </div>
-                    <div class="room">
+                    <div class="room reveal">
                         <h3 id="kitchen-title"></h3>
                         <ul id="kitchen-amenities"></ul>
                     </div>
-                    <div class="room">
+                    <div class="room reveal">
                         <h3 id="terrace-title"></h3>
                         <ul id="terrace-amenities"></ul>
                     </div>
-                    <div class="room">
+                    <div class="room reveal">
                         <h3 id="parking-title"></h3>
                         <ul id="parking-amenities"></ul>
                     </div>
@@ -140,7 +171,7 @@
                     <div class="image-secret-container">
                         <img class="suite-secret-image" src="resources/images/suite_main.jpg" alt="Suite Main"
                             id="suite-secret-image-off">
-                        <img class="suite-secret-image" src="resources/images/suite_s.jpg" style="display : none;"
+                        <img class="suite-secret-image" src="resources/images/suite_s.jpg" style="display: none;"
                             alt="Suite S" id="suite-secret-image-on">
                         <div class="secret-overlay">
                             <i class="fas fa-toggle-off" id="secret-icon"></i>
@@ -149,13 +180,14 @@
                     </div>
                     <img src="resources/images/suite_x.jpg" alt="Suite X">
                     <img src="resources/images/suite_bath_front.jpg" alt="Suite Bath Front">
-                    <img src="resources/images/suite_bedroom.jpg" alt="Suite Bath">
+                    <img src="resources/images/suite_bedroom.jpg" alt="Suite Bedroom">
                     <img src="resources/images/suite_ext.jpg" alt="Suite Exterior">
                     <img src="resources/images/suite_kitchen.jpg" alt="Suite Kitchen">
                 </div>
             </div>
         </div>
     </main>
+
     <footer>
         <!-- Infos & Map -->
         <div class="footer-content">
@@ -176,16 +208,24 @@
         <div id="cookie-popup">
             <h2>Do you want cookies? 🍪</h2>
             <p>We use cookies to enhance your experience.</p>
-            <p> By clicking "Yes", you agree to our use of cookies.</p>
+            <p>By clicking "Yes", you agree to our use of cookies.</p>
             <div class="cookie-description">
                 <button class="button" id="accept-cookies">Yes</button>
                 <button class="button" id="decline-cookies">No</button>
-                <a
-                    href="https://europa.eu/youreurope/business/dealing-with-customers/data-protection/online-privacy/index_fr.htm">learn
+                <a href="https://europa.eu/youreurope/business/dealing-with-customers/data-protection/online-privacy/index_fr.htm">learn
                     more about cookies</a>
             </div>
+        </div>
     </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" aria-hidden="true">
+        <button id="lightbox-close" aria-label="Fermer">&#x2715;</button>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
 

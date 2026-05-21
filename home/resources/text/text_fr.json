@@ -4,7 +4,24 @@
     "invitation_description" : "Nous vous proposons La Suite des Charmes, un studio entièrement rénové de 18 m², idéalement situé au cœur du village naturiste du Cap d'Agde, dans la résidence prisée Port Nature 2 (coursives Nord, n°68).",
     "location_title":"Un emplacement privilégié",
     "location_description":"À seulement quelques pas de la plage, des commerces et des zones d'animation, ce studio offre un cadre idéal pour des vacances en toute liberté, dans le respect de l'esprit naturiste.",
+    "lang_label": "Langue",
+    "hero_tagline": "Studio entièrement rénové · Vue mer · Port Nature 2",
+    "hero_cta": "Nous contacter",
+    "price": "100 €",
+    "price_per": "/ nuit",
     "contact_title":"Contactez-nous",
+    "contact_form": {
+        "name_label": "Nom",
+        "email_label": "Adresse e-mail",
+        "phone_label": "Téléphone",
+        "subject_label": "Objet",
+        "subject_reservation": "Réservation",
+        "subject_cancellation": "Annulation",
+        "subject_info": "Information",
+        "message_label": "Message",
+        "phone_preference": "Je préfère être contacté par téléphone",
+        "submit": "Envoyer"
+    },
     "rooms": {
         "title": "Description du logement",
         "main":{
